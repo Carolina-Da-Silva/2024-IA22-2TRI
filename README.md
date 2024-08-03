@@ -1,8 +1,26 @@
-# Criando Projeto
-•Abra o github e crie um novo repositório com o arquivo README file  
-•Após criar o repositório vá em "<>Code" e depois em "Codespaces" e crie um Codespaces
-•
+# Tutorial: Projeto Node.js 
+## Passo 1: criar um Repositório no Github
+### 1. Criar o Repositório:
+- Acesse o GitHub e crie um novo repositório que já inclua o arquivo README.md.
+<img src="imagens/img01.jpeg">
 
+
+
+
+
+
+
+
+Crie um diretório para o projeto e acesse-o pelo vscode, abra o terminal e siga os passos abaixo.
+
+```bash
+npm init -y
+npm install express cors sqlite3 sqlite
+npm install --save-dev typescript nodemon ts-node @types/express @types/cors
+npx tsc --init
+mkdir src
+touch src/app.ts
+```
 Crie um diretório para o projeto e acesse-o pelo vscode, abra o terminal e siga os passos abaixo.
 
 ```bash

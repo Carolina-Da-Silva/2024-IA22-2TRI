@@ -1,0 +1,21 @@
+POST https://improved-space-engine-69gw75jqj4wq24j69-3333.app.github.dev/users HTTP/1.1
+content-type: application/json
+
+{
+  "name": "John Doe",
+  "email": "johndoe@mail.com"
+}
+
+####
+
+PUT https://improved-space-engine-69gw75jqj4wq24j69-3333.app.github.dev/ HTTP/1.1
+content-type: application/json
+
+{
+  "name": "John Doe Updated",
+  "email": "johndoe@mail.com"
+}
+
+####
+
+DELETE https://improved-space-engine-69gw75jqj4wq24j69-3333.app.github.dev/ HTTP/1.1
