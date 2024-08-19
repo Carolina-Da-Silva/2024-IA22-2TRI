@@ -1,0 +1,22 @@
+POST https://vigilant-space-carnival-wr7xj5wpw5xphj46-3333.app.github.dev/users HTTP/1.1
+Content-Type: application/json
+Authorization: token xxx
+
+{
+  "name": "John Doe",
+  "email": "john@example.com"
+}
+####
+
+PUT  https://vigilant-space-carnival-wr7xj5wpw5xphj46-3333.app.github.dev/users/1 HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "John Doe update",
+  "email": "john@example.com"
+}
+
+####
+
+DELETE  https://vigilant-space-carnival-wr7xj5wpw5xphj46-3333.app.github.dev/users/1 HTTP/1.1
+
