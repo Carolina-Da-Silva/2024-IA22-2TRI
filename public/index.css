@@ -5,7 +5,7 @@ html, body {
   }
   
   body {
-    background-image: url(https://raw.githubusercontent.com/Edson-Edu/2024-IA22-2TRI/main/public/seattle.jpg);
+    background-image: url(https://i.pinimg.com/564x/d8/53/49/d85349f7e91f366aee9f3e21f468f4bf.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -16,7 +16,7 @@ html, body {
   }
   
   .container {
-    background: rgba(0, 0, 0, 0.7); 
+    background: rgba(0, 0, 0, 0.658); 
     border-radius: 10px;
     padding: 20px;
     max-width: 800px;
@@ -50,14 +50,14 @@ html, body {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    background-color: #007BFF;
+    background-color: #0b3868;
     color: #fff;
     cursor: pointer;
     font-size: 1em;
   }
   
   form button:hover {
-    background-color: #0056b3;
+    background-color: #023469;
   }
   
   table {
@@ -68,15 +68,15 @@ html, body {
   
   table th, table td {
     padding: 10px;
-    border: 1px solid #fff;
+    border: 1px solid #888888;
   }
   
   table th {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(19, 47, 80, 0.6);
   }
   
   table td {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(19, 68, 80, 0.6);
   }
   
   table button {
@@ -90,7 +90,7 @@ html, body {
   }
   
   table button.excluir {
-    background-color: #dc3545;
+    background-color: #e91111;
   }
   
   table button.excluir:hover {
@@ -98,7 +98,7 @@ html, body {
   }
   
   table button.editar {
-    background-color: #28a745;
+    background-color: #575757;
   }
   
   table button.editar:hover {

@@ -2,7 +2,7 @@
 ## 1. Crie um repositório no github
 - Acesse o github e crie um novo repositório que já inclua o arquivo README.md.
 
-*foto*
+<img src="imagens/img01.jpeg">
 
 ## 2. Crie um codespace
 - Caso o repositório não tenha sido aberto automaticamente, abra-o
@@ -10,17 +10,17 @@
 -Vá para a aba "Codespaces" e selecione a opção “Create Codespace on main” para criar um novo Codespace.
 -O Codespace abrirá automaticamente
 
-*foto*
+<img src="imagens/img02.jpeg">
 
 -Irá aparecer a seguinte tela:
 
-*foto*
+<img src="imagens/img03.jpeg">
 
 ## 3. Configurando o Projeto
 - Caso o terminal não tenha sido aberto automaticamente, abra-o
 - Use o atalho Ctrl+" ou clique em "Terminal"-> "Novo terminal"
 
-*foto*
+<img src="imagens/img04.jpeg">
 
 - Digite o seguinte comando no terminal e após escrever aperte "enter"
 ```bash  
@@ -46,19 +46,24 @@ mkdir src public
 ```bash
 touch src/app.ts src/database.ts public/index.html public/index.css teste.http
 ```
+- Depois de todos esses comandos seu projeto precisa ter os seguintes arquivos:
+
+<img src="imagens/img05.jpeg">
+
 ## 4. Configurando o arquivo tsconfig.json
 - Abra o arquivo tsconfig.json para alterar a linha que estiver escrito "outDir: "./" (linha 58 do arquivo)
 
-*foto*
+<img src="imagens/img06.jpeg">
+
 - Tire os comentários // e mude para "outDir: "./dist", pule uma linha e adicione "rootDir": "./src"
 - Deverá ficar assim:
 
-*foto*
+<img src="imagens/img07.jpeg">
 
 ## 5. Configure o arquivo package.json
 - Abra o arquivo package.json para alterar a linha que estiver escrito "Script": (linha 6 do arquivo)
 
-*foto*
+<img src="imagens/img08.jpeg">
 
 - Na linha baixo de `"Script":` estará escrito<br>
 `"test": "echo \"Error: no test specified\" && exit 1"` 
@@ -68,12 +73,12 @@ touch src/app.ts src/database.ts public/index.html public/index.css teste.http
 ```
 Seu código deverá ficar assim:
 
-*foto*
+<img src="imagens/img09.jpeg">
 
 ## 6. Código do servidor
 - Selecione o arquivo app.ts
 
-*foto*
+<img src="imagens/img10.jpeg">
 
 - Adicione o seguinte código neste arquivo:
 ```bash
@@ -94,11 +99,12 @@ app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
 ```
+
 ## 7. Iniciando o servidor
 - Para iniciar você precisará instalar a extenção REST Client
 - No menu aperte em "Extenção" e na barra de pesquisa escreva REST Client 
 
-*foto de como instalar a extensão*
+<img src="imagens/img11.jpeg">
 
 - Depois de instalar a extenção, no terminal digite o seguinte comando:
 ```bash
@@ -106,15 +112,15 @@ npm run dev
 ```
 - Após esse comando irá aparecer o aviso Server running on port 3333 e aperte no botão verder Abrir no navegador
 
-*foto*
+<img src="imagens/img12.jpeg">
 
 - Caso esse botão não apareca você pode abrir o navegador pela seguinte forma:
 
-*foto*
+<img src="imagens/img13.jpeg">
 
 - Se todos os passos estiverem certos irá aparecer a seguinte página com a mensagem Hello world
 
-*foto*
+<img src="imagens/img14.jpeg">
 
 ## 8. Configurando o BD
 - No arquivo `database.ts` adicione o seguinte código:
@@ -193,40 +199,37 @@ Authorization: token xxx
   "name": "John Doe",
   "email": "john@example.com"
 }
-
 ```
 
 - Ao lado de Terminal selecione a aba Portas
 
-*foto*
+<img src="imagens/img15.jpeg">
 
 - Irá aparecer o número da sua porta,endereço e a visibilidade 
 
-*foto mostrando*
+<img src="imagens/img16.jpeg">
 
 - Agora com o mouse em cima de Private (que está em baixo de visibilidade) aperte com o botão direito e selecione a opção `visibilidade de portas` e selecione `public` 
 
-*foto mostrando*
+<img src="imagens/img17.jpeg">
 
 - Agora copie o link do endereço 
 
-*foto mostrando*
+<img src="imagens/img18.jpeg">
 
-- Vá no arquivo teste.http e no código e antes de onde estiver escrito `Users` cole o link que foi copiado 
+- Vá no arquivo teste.http e no código e antes de onde estiver escrito `Users` cole o link que foi copiado, deverá ficar assim
 
-*foto mostrando*
-
-- Seu código deverá ficar assim:
-
-*foto*
+<img src="imagens/img19.jpeg">
 
 - Agora, clique na opção `Send Request` que aparecera em cima de `Post`.
 
-*foto*
+<img src="imagens/img20.jpeg">
 
 - E se estiver tudo certo aparecerá a seguinte aba:
 
-*foto*
+<img src="imagens/img21.jpeg">
+<br><br><br>
+<img src="imagens/img22.jpeg">
 
 ## 10. Update e Delete
 - No arquivo `teste.http` você precisará adicionar o seguinte código:
@@ -248,7 +251,7 @@ DELETE  users/1 HTTP/1.1
 
 - O mesmo link que você colocou em POST, você precisará colocar em PUT e no DELETE
 
-*foto*
+<img src="imagens/img23.png">
 
 - Agora vá no arquivo `app.ts` apague **TODO** o código, copie o seguinte código e cole no arquivo:
 ```bash
@@ -318,13 +321,13 @@ app.listen(port, () => {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="index.css">
-  <title>Grey's Anatomy</title>
+  <title>Projeto</title>
 </head>
 
 <body>
   <div class="container">
-    <h1>Grey's Anatomy</h1>
-    <h3>Petição contra o fim da série</h3>
+    <h1>Projeto-Node</h1>
+    <h3>-testando a página</h3>
 
     <form>
       <input type="text" name="name" placeholder="Nome" required>
@@ -531,10 +534,15 @@ html, body {
 
 - Agora volte no arquivo `app.ts`, procure o código em que esteja escrito:<br>
 `app.use(express.json());` (possivelmente seja a linha 9)
+
+<img src="imagens/img24.png">
+
 - Em baixo desse código coloque o seguinte código
 ```bash
 app.use(express.static(__dirname + '/../public'))
 ```
+
+<img src="imagens/img25.png">
 
 - Após todos os passos sua página ficará assim:
 
