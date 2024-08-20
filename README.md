@@ -543,7 +543,3 @@ app.use(express.static(__dirname + '/../public'))
 ```
 
 <img src="imagens/img25.png">
-
-- Após todos os passos sua página ficará assim:
-
-*foto*
